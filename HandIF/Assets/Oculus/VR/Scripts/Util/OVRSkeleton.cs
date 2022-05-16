@@ -344,27 +344,30 @@ public class OVRSkeleton : MonoBehaviour
 					gCapsule.CapsuleCollider.center = capsule.CapsuleCollider.center;
 					// Aligning GrabCapsules w/ left/right hand. Left hand's positions are treated differently from right for some reason. Rushed, need to fix this w/ a more elegant solution.
 					if (_skeletonType == SkeletonType.HandLeft)
-                    {
+					{
 						if (BoneLabelFromBoneId(_skeletonType, bone.Id).Contains("3"))
-                        {
+						{
 							if (BoneLabelFromBoneId(_skeletonType, bone.Id).Contains("Thumb"))
-                            {
+							{
 								gCapsule.CapsuleCollider.center += Vector3.forward * (gCapsule.CapsuleCollider.radius - .005f);
-							} else if (!BoneLabelFromBoneId(_skeletonType, bone.Id).Contains("WristRoot"))
-                            {
+							}
+							else if (!BoneLabelFromBoneId(_skeletonType, bone.Id).Contains("WristRoot"))
+							{
 								gCapsule.CapsuleCollider.center += Vector3.down * (gCapsule.CapsuleCollider.radius - .005f);
 							}
-						} else if (!BoneLabelFromBoneId(_skeletonType, bone.Id).Contains("WristRoot"))
-                        {
+						}
+						else if (!BoneLabelFromBoneId(_skeletonType, bone.Id).Contains("WristRoot"))
+						{
 							gCapsule.CapsuleCollider.center += Vector3.up * (gCapsule.CapsuleCollider.radius - .005f);
-                        }
-						
-					} else
-                    {
+						}
+
+					}
+					else
+					{
 						if (!BoneLabelFromBoneId(_skeletonType, bone.Id).Contains("WristRoot"))
 						{
 							gCapsule.CapsuleCollider.center += Vector3.down * (gCapsule.CapsuleCollider.radius - .005f);
-                        }
+						}
 					}
 					GameObject gcGO = gCapsule.CapsuleCollider.gameObject;
 					gcGO.transform.SetParent(_capsulesGO.transform, false);

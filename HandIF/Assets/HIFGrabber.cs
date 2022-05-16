@@ -99,7 +99,7 @@ public class HIFGrabber : OVRGrabber
         return false;
     }
 
-    protected override void OnUpdatedAnchors()
+    public override void OnUpdatedAnchors()
     {
         if (HIFSkeleton._skeletonType == OVRSkeleton.SkeletonType.HandLeft)
         {

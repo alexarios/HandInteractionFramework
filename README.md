@@ -5,8 +5,15 @@ The Hand Interaction Framework (HandIF) team looks to create both the hardware a
 
 [Version 0.1.0 Demo](https://youtu.be/yLX68JW9O68)
 
-## Installation/How to Use in Unity Project
-(Work in Progress. Not yet fully released.)
+[Progress Presentation](https://docs.google.com/presentation/d/1rJVfUt4EutZ6CVTzFfA2DmPf58VN1m8epQoFPxv2fVI/edit?usp=sharing)
+
+## Installation/How to Use in Unity Project 
+1. Make sure you have the latest Unity LTS editor version (2021.3.1f) installed.
+2. Download/clone the contents of the HandIF folder onto your computer.
+3. Open Unity Hub and select open. Go to the project location and open the folder.
+4. Make sure other dependencies, including the Oculus Integration Unity package and XR Manager, have installed successfully. 
+5. Some access modifiers may need to be set to public.
+
 
 ## How to Test the Demo Scenes
 ***If hand tracking isn't enabled on your headset, follow [these instructions](https://support.oculus.com/articles/headsets-and-accessories/controllers-and-hand-tracking/hand-tracking-quest-2/) before proceeding.***

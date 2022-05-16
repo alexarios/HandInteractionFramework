@@ -24,6 +24,7 @@ public class HIFCustomSkeleton : OVRSkeleton
         for (int i = 0; i < _capsules.Count; ++i)
         {
             OVRBoneCapsule capsule = _capsules[i];
+            // GameObject capsuleGO = capsule.CapsuleRigidbody.gameObject;
             CapsuleCollider grabCollider = GrabCapsules[i].CapsuleCollider;
 
             grabCollider.transform.position = capsule.CapsuleCollider.transform.position;

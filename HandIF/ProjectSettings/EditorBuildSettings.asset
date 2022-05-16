@@ -5,9 +5,15 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/HandIF POC Scene.unity
     guid: 4955fd01bec94bb4c8ffb4ce0fefb8b8
+  - enabled: 0
+    path: Assets/Oculus/Interaction/Samples/Scenes/BasicGrab.unity
+    guid: 13bd76582a631124699f410c1e007f8c
+  - enabled: 1
+    path: Assets/HandIF Scene.unity
+    guid: 99dc55115c10daa488c66f853fb387f3
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 940026646a25a3348bf3dc3292b5a4ef, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 18424023cd21d1c4caa4298f7837c835, type: 2}
